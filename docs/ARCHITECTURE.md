@@ -112,7 +112,7 @@ Transport 映射：outbound=eval、inbound 小=title、inbound 大=**eval_with_c
 - `adapters/` 目錄 = 社群貢獻主戰場（改 selector 不用懂 Rust）
 - CONTRIBUTING.md：adapter 貢獻 SOP（怎麼測、怎麼開 PR）
 - adapter CI：schema validation + （後期）playwright smoke test
-- **Agent-driven 開發治理**（抄 BAT 模式）：`AGENTS.md`（精簡規則）+ `CLAUDE.md`（完整規則）+ `plans/*.md`（status/motivation/進度 log/trade-offs/remaining work）。關鍵規則：pnpm 鎖版、明確 verify scripts、tag-based release、**host-api 是相容性契約（只能 additive）**
+- **Agent-driven 開發治理**（抄 BAT 模式）：`AGENTS.md`（契約正文，原 `CLAUDE.md`）+ `plans/*.md`（status/motivation/進度 log/trade-offs/remaining work）。關鍵規則：pnpm 鎖版、明確 verify scripts、tag-based release、**host-api 是相容性契約（只能 additive）**
 - **host-api adapter pattern**（BAT `host-api.ts`，MIT 可搬）：renderer 永不直接 `invoke`，一律走 `host.*` proxy。第一天就建立。
 - 原 repo teddashh/multi-ai-chat：新增 desktop 方向指引或另開新 repo [待用戶決定]
 

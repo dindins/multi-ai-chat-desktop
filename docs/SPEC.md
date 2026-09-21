@@ -89,7 +89,7 @@ multi-ai-desktop/
 ├─ shared/                   # types.ts, constants.ts (ported, used by src/ and injected/)
 ├─ docs/                     # ARCHITECTURE.md SPEC.md PLAN.md study/
 ├─ plans/                    # living implementation logs (BAT pattern)
-├─ AGENTS.md CLAUDE.md CONTRIBUTING.md LICENSE (MIT)
+├─ AGENTS.md CONTRIBUTING.md LICENSE (MIT)
 └─ .github/workflows/        # ci.yml (lint+test+adapter diff), release.yml (tag → build → Release)
 ```
 
