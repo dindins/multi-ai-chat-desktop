@@ -118,7 +118,7 @@ The repo includes two explicit local Skills:
 
 The Skills may install only locked project dependencies, build generated code, and start `tauri dev`. They never install/remove host toolchains or global packages, change `PATH` or security settings, build a release installer, read provider credentials, upload receipts, or roll back host changes. Remote/cloud agents cannot display the GUI on your computer. There is intentionally no Docker lane.
 
-Common prerequisites are **Node.js ^22.13.0 || >=24.0.0**, pnpm/Corepack, stable Rust, and the [Tauri 2 platform prerequisites](https://v2.tauri.app/start/prerequisites/). The first Rust build can take several minutes. The versioned contract is in [`agent-release.json`](./agent-release.json) and [`docs/AGENT-READY-SOURCE-RELEASE.md`](./docs/AGENT-READY-SOURCE-RELEASE.md).
+Common prerequisites are **Node.js ^22.23.4 || ^24.22.1 || >=26.12.1**, pnpm/Corepack, stable Rust, and the [Tauri 2 platform prerequisites](https://v2.tauri.app/start/prerequisites/). The first Rust build can take several minutes. The versioned contract is in [`agent-release.json`](./agent-release.json) and [`docs/AGENT-READY-SOURCE-RELEASE.md`](./docs/AGENT-READY-SOURCE-RELEASE.md).
 
 ## Development
 

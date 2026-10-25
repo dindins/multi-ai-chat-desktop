@@ -118,7 +118,7 @@ Das Repo enthält zwei ausdrücklich aufzurufende lokale Skills:
 
 Die Skills dürfen ausschließlich gesperrte Projektabhängigkeiten installieren, generierten Code bauen und `tauri dev` starten. Sie installieren/entfernen keine Host-Toolchains oder globalen Pakete, ändern weder `PATH` noch Sicherheitseinstellungen, bauen keinen Release-Installer, lesen keine Anbieter-Zugangsdaten, laden keine Belege hoch und rollen Host-Änderungen nicht zurück. Remote-/Cloud-Agenten können auf deinem Rechner kein GUI anzeigen. Einen Docker-Pfad gibt es bewusst nicht.
 
-Gemeinsame Voraussetzungen sind **Node.js ^22.13.0 || >=24.0.0**, pnpm/Corepack, stabiles Rust und die [plattformbezogenen Voraussetzungen für Tauri 2](https://v2.tauri.app/start/prerequisites/). Der erste Rust-Build kann mehrere Minuten dauern. Der versionierte Vertrag steht in [`agent-release.json`](./agent-release.json) und [`docs/AGENT-READY-SOURCE-RELEASE.md`](./docs/AGENT-READY-SOURCE-RELEASE.md).
+Gemeinsame Voraussetzungen sind **Node.js ^22.23.4 || ^24.22.1 || >=26.12.1**, pnpm/Corepack, stabiles Rust und die [plattformbezogenen Voraussetzungen für Tauri 2](https://v2.tauri.app/start/prerequisites/). Der erste Rust-Build kann mehrere Minuten dauern. Der versionierte Vertrag steht in [`agent-release.json`](./agent-release.json) und [`docs/AGENT-READY-SOURCE-RELEASE.md`](./docs/AGENT-READY-SOURCE-RELEASE.md).
 
 ## Entwicklung
 

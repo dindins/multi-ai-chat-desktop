@@ -31,7 +31,7 @@ macOS remains ad-hoc signed, not Developer ID signed or notarized. The Apple Sil
 
 The Agent contract does not claim that CI displayed a window. It also does not install host prerequisites, inventory the full OS, sandbox checked-out code, upload receipts, or roll back host changes. See [`AGENT-READY-SOURCE-RELEASE.md`](./AGENT-READY-SOURCE-RELEASE.md).
 
-The v2.0.0 source contract supports Node.js `^22.13.0 || >=24.0.0`, matching the locked pnpm and lint toolchain. `agent:doctor` rejects unsupported Node versions and stops instead of presenting an invalid source launch as ready. This requirement applies only to source development; packaged desktop users do not need Node.js.
+The v2.0.0 source contract supports Node.js `^22.23.4 || ^24.22.1 || >=26.12.1`, matching the locked pnpm and lint toolchain. `agent:doctor` rejects unsupported Node versions and stops instead of presenting an invalid source launch as ready. This requirement applies only to source development; packaged desktop users do not need Node.js.
 
 ## Provider adapters
 

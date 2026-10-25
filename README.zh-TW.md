@@ -118,7 +118,7 @@ Repo 內含兩個必須明確呼叫的本機 Skills：
 
 Skills 只能安裝 locked 專案依賴、build generated code 並啟動 `tauri dev`；不會安裝／移除 host toolchain 或 global package、不改 `PATH` 或安全設定、不 build release installer、不讀 provider 憑證、不 upload receipt，也不自動 rollback host。Remote／cloud agent 無法在你的電腦顯示 GUI；本專案刻意不提供 Docker lane。
 
-共同前提為 **Node.js ^22.13.0 || >=24.0.0**、pnpm／Corepack、stable Rust，以及 [Tauri 2 各平台 prerequisites](https://v2.tauri.app/start/prerequisites/)。第一次 Rust build 可能需要數分鐘。版本化合約位於 [`agent-release.json`](./agent-release.json) 與 [`docs/AGENT-READY-SOURCE-RELEASE.md`](./docs/AGENT-READY-SOURCE-RELEASE.md)。
+共同前提為 **Node.js ^22.23.4 || ^24.22.1 || >=26.12.1**、pnpm／Corepack、stable Rust，以及 [Tauri 2 各平台 prerequisites](https://v2.tauri.app/start/prerequisites/)。第一次 Rust build 可能需要數分鐘。版本化合約位於 [`agent-release.json`](./agent-release.json) 與 [`docs/AGENT-READY-SOURCE-RELEASE.md`](./docs/AGENT-READY-SOURCE-RELEASE.md)。
 
 ## 開發
 

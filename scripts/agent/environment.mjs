@@ -4,14 +4,16 @@ import path from 'node:path';
 import { root } from './contract.mjs';
 import { windowsShellCommand } from './windows-command.mjs';
 
-export const supportedNodeRange = '^22.13.0 || >=24.0.0';
+export const supportedNodeRange = '^22.23.4 || ^24.22.1 || >=26.12.1';
 
 export function isSupportedNodeVersion(version) {
-  const match = /^(?:v)?(\d+)\.(\d+)\.(\d+)/.exec(version);
+  const match = /^(?:v)?(\d+)\.(\d+)\.(\d+)$/.exec(version);
   if (!match) return false;
-  const major = Number(match[1]);
-  const minor = Number(match[2]);
-  return (major === 22 && minor >= 13) || major >= 24;
+  const [major, minor, patch] = match.slice(1).map(Number);
+  if (![major, minor, patch].every(Number.isSafeInteger)) return false;
+  if (major > 26) return true;
+  const minimum = { 22: [23, 4], 24: [22, 1], 26: [12, 1] }[major];
+  return Boolean(minimum) && (minor > minimum[0] || (minor === minimum[0] && patch >= minimum[1]));
 }
 
 export function collectEnvironmentChecks() {

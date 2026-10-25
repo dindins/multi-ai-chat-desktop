@@ -118,7 +118,7 @@ Repoには明示的に呼び出す2つのlocal Skillがあります。
 
 Skillが行えるのはlocked project dependencyのinstall、generated codeのbuild、`tauri dev` の起動だけです。Host toolchain／global packageのinstall・remove、`PATH`／security settingの変更、release installerのbuild、provider credentialの読み取り、receiptのupload、host変更のrollbackは行いません。Remote／cloud agentはあなたのPCにGUIを表示できず、Docker laneは意図的に用意していません。
 
-共通の前提条件は **Node.js ^22.13.0 || >=24.0.0**、pnpm／Corepack、stable Rust、[Tauri 2の各platform prerequisites](https://v2.tauri.app/start/prerequisites/)です。最初のRust buildには数分かかる場合があります。Versioned contractは [`agent-release.json`](./agent-release.json) と [`docs/AGENT-READY-SOURCE-RELEASE.md`](./docs/AGENT-READY-SOURCE-RELEASE.md) にあります。
+共通の前提条件は **Node.js ^22.23.4 || ^24.22.1 || >=26.12.1**、pnpm／Corepack、stable Rust、[Tauri 2の各platform prerequisites](https://v2.tauri.app/start/prerequisites/)です。最初のRust buildには数分かかる場合があります。Versioned contractは [`agent-release.json`](./agent-release.json) と [`docs/AGENT-READY-SOURCE-RELEASE.md`](./docs/AGENT-READY-SOURCE-RELEASE.md) にあります。
 
 ## 開発
 
